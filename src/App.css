@@ -8,21 +8,26 @@ body{
   background: radial-gradient(70.94% 141.17% at 77.36% 65.72%, #2411DC 0%, #0B035B 100%);
 }
 .bgimg{
-  position: absolute;
-width: 1498px;
-height: 90vh;
+  position: relative;
+  
+  width: 1498px;
+  height: 88vh;
+
   background-image: url("./statics/png/pianoBg.png"),radial-gradient(70.94% 141.17% at 77.36% 65.72%, #2411DC 0%, #0B035B 100%);
   background-blend-mode: lighten;
 }
+.content{
+  margin-right: 11vw;
+  margin-left: 11vw;
+}
+
 .navbar{
   display: flex;
   align-items: center;
   padding-top: 67px;
-  padding-left: 160px;
-  padding-right: 160px;
 }
 .navlogo{
-  padding-right: 35vw;
+  padding-right: 33vw;
 }
 .navlinkgroup{
   display: flex;
@@ -49,15 +54,21 @@ height: 90vh;
   display: flex;
 }
 .jgname{
-  
+  padding-top:17vh ;
 }
 .jgpic{
-width: 399.26px;
-height: 586.31px;
+padding-top: 6.4vh;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .jgsoul{
 mix-blend-mode: lighten;
+position: absolute;
+padding-top: 35vh;
+left:42%;
+}
+.smallsection{
+  padding-top: 40vh;
+  padding-left: 60px;
 }
 .smallhead{
   font-style: normal;
@@ -66,8 +77,7 @@ font-size: 18px;
 line-height: 23px;
 color: #FFF500;
 padding-bottom: 25px;
-border:lawngreen solid;
-margin-bottom: 0px;
+margin: 0px;
 }
 .smallcontent{
   font-style: normal;
@@ -76,9 +86,10 @@ font-size: 30px;
 line-height: 114%;
 /* or 34px */
 
-border:lawngreen solid;
 text-transform: capitalize;
+padding-bottom: 31px;
 
+margin: 0%;
 color: #FFFFFF;
 
 }
@@ -90,6 +101,7 @@ color: #FFFFFF;
   /* or 21px */
   
   text-transform: capitalize;
+  margin: 0%;
   
   color: #FFFFFF;
 }

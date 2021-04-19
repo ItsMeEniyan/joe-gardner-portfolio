@@ -6,12 +6,16 @@ import Soul from "./statics/png/soul.png";
 
 function App() {
   return (
+    <div>
     <div className="page">
       <div className="bgimg">
+      <div className="content">
         <div className="navbar">
-          <a className="navlogo" href="https://github.com/ItsMeEniyan/joe-gardner-portfolio">
+        <div className="navlogo" >
+          <a href="https://github.com/ItsMeEniyan/joe-gardner-portfolio">
             <JgLogo />
           </a>
+          </div>
           <div className="navlinkgroup">
             <div className="navlink" id="selected">
               Home
@@ -39,15 +43,19 @@ function App() {
           <div className="jgsoul">
             <img src={Soul} alt="joe-gardners-soul"></img>
           </div>
-          <div>
+          <div className="smallsection">
             <p className="smallhead">Jazz Musician</p>
             <p className="smallcontent">Based in New York City, I’m musician and Middle school band teacher</p>
             <p className="smallquotes">"Life is full of possibilities, you just need to know where to look!"</p>
           </div>
         </div>
-
+        </div>
       </div>
       
+    </div>
+    <div>
+      <h1>My other projects Here</h1>
+    </div>
     </div>
   );
 }
