@@ -1,16 +1,19 @@
 import './App.css';
 import JgLogo from "./statics/svg/pianoBg.js";
+import JgName from "./statics/svg/jgName.js";
+import Dp from "./statics/png/joegardner.png";
+import Soul from "./statics/png/soul.png";
 
 function App() {
   return (
     <div className="page">
       <div className="bgimg">
         <div className="navbar">
-          <div>
+          <a className="navlogo" href="https://github.com/ItsMeEniyan/joe-gardner-portfolio">
             <JgLogo />
-          </div>
+          </a>
           <div className="navlinkgroup">
-            <div className="navlink">
+            <div className="navlink" id="selected">
               Home
             </div>
             <div className="navlink">
@@ -25,6 +28,22 @@ function App() {
 
           </div>
 
+        </div>
+        <div className="home">
+          <div className="jgname">
+            <JgName />
+          </div>
+          <div className="jgpic">
+            <img src={Dp} alt="joe-gardner-profile"></img>
+          </div>
+          <div className="jgsoul">
+            <img src={Soul} alt="joe-gardners-soul"></img>
+          </div>
+          <div>
+            <p className="smallhead">Jazz Musician</p>
+            <p className="smallcontent">Based in New York City, I’m musician and Middle school band teacher</p>
+            <p className="smallquotes">"Life is full of possibilities, you just need to know where to look!"</p>
+          </div>
         </div>
 
       </div>

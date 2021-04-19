@@ -11,14 +11,18 @@ body{
   position: absolute;
 width: 1498px;
 height: 90vh;
-mix-blend-mode: lighten;
   background-image: url("./statics/png/pianoBg.png");
+  background-blend-mode: lighten;
 }
 .navbar{
   display: flex;
+  align-items: center;
   padding-top: 67px;
   padding-left: 160px;
   padding-right: 160px;
+}
+.navlogo{
+  padding-right: 35vw;
 }
 .navlinkgroup{
   display: flex;
@@ -29,5 +33,62 @@ mix-blend-mode: lighten;
   font-size: 20px;
   line-height: 26px;
   color: white;
-  padding-left: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+#selected{
+  color: #FFF500;
+  border-bottom: 1px solid #FFF500;;
+}
+.navlink:hover{
+  color: #FFF500;
+}
+.home{
+  display: flex;
+}
+.jgname{
+  
+}
+.jgpic{
+width: 399.26px;
+height: 586.31px;
+
+mix-blend-mode: normal;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.jgsoul{
+mix-blend-mode: lighten;
+}
+.smallhead{
+  font-style: normal;
+font-weight: 450;
+font-size: 18px;
+line-height: 23px;
+color: #FFF500;
+
+}
+.smallcontent{
+  font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 114%;
+/* or 34px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+.smallquotes{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 114%;
+  /* or 21px */
+  
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
 }
