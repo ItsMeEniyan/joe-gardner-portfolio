@@ -36,6 +36,7 @@ function App() {
         <div className="home">
           <div className="jgname">
             <JgName />
+            <p>Listen my music</p>
           </div>
           <div className="jgpic">
             <img src={Dp} alt="joe-gardner-profile"></img>
