@@ -55,6 +55,7 @@ function App() {
     </div>
     <div>
       <h1>My other projects Here</h1>
+      <p>Under Development......</p>
     </div>
     </div>
   );
