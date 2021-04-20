@@ -1,10 +1,35 @@
 import './App.css';
+//import Howl from "howler";
 import JgLogo from "./statics/svg/pianoBg.js";
 import JgName from "./statics/svg/jgName.js";
 import Dp from "./statics/png/joegardner.png";
 import Soul from "./statics/png/soul.png";
+//import Play from "./statics/png/play.png";
+import  { Component } from 'react';
 
-function App() {
+//import Pause from "./statics/png/pause.png";
+
+//import Song from ".statics/soundtrack/cristoRedentor.mp3";
+/*
+const audioClips = [
+  {sound: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", label: "cristo"}
+]
+*/
+class App extends Component {
+  /*SoundPlay =(src)=>{
+    const sound = new Howl({
+      src
+    })
+    sound.play();
+  }
+  /*renderButtonSound =()=>{
+    return audioClips.map((soundObj, index)=>{
+      return (
+        <button key={index} onClick={()=> this.SoundPlay(soundObj.sound)}>{soundObj.label}</button>
+      )
+    })
+  }*/
+  render(){
   return (
     <div>
     <div className="page">
@@ -36,7 +61,11 @@ function App() {
         <div className="home">
           <div className="jgname">
             <JgName />
-            <p>Listen my music</p>
+            {/*<div className="soundtrackcontainer">
+            <p>Click to listen my kinda music</p>
+            <img src={Play} alt="Play-button" id="icon"></img>
+            </div>
+            {this.renderButtonSound()}*/}
           </div>
           <div className="jgpic">
             <img src={Dp} alt="joe-gardner-profile"></img>
@@ -60,6 +89,7 @@ function App() {
     </div>
     </div>
   );
+}
 }
 
 export default App;

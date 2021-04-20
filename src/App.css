@@ -53,12 +53,35 @@ body{
 .home{
   display: flex;
 }
+.soundtrackcontainer{
+  padding-left: 72px;
+  display: flex;
+  align-items: center;
+}
+.soundtrackcontainer img{
+  padding: 0%;
+  margin: 0%;
+width: 40px;
+height: 40px;
+}
+.soundtrackcontainer img:hover{
+  width:45px;
+  height:45px;
+  cursor: pointer;
+}
 .jgname{
   padding-top:17vh ;
 }
 .jgname p{
-  justify-content: right;
-  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 114%;
+  /* or 21px */
+  
+  text-align: right;
+  
+  color: #FFF500;
 }
 .jgpic{
 padding-top: 6.4vh;
