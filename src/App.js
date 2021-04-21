@@ -7,6 +7,7 @@ import Soul from "./statics/png/soul.png";
 //import Play from "./statics/png/play.png";
 import  { Component } from 'react';
 
+import { motion } from "framer-motion"
 //import Pause from "./statics/png/pause.png";
 
 //import Song from ".statics/soundtrack/cristoRedentor.mp3";
@@ -15,6 +16,36 @@ const audioClips = [
   {sound: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", label: "cristo"}
 ]
 */
+const soul = {
+  hidden: {
+    opacity:0
+  },
+  visible: {
+    opacity:1,
+    transition: { duration: 3, delay: 2}
+  }
+}
+const aboutsection = {
+  hidden: {
+    opacity:0,
+    x:"-100px"
+  },
+  visible: {
+    opacity:1,
+    x:"0px",
+    transition: { duration: 1, ease: 'easeInOut'}
+  }
+}
+const jgname = {
+  hidden: {
+    opacity:0,
+    x:"100px"
+  },
+  visible: {
+    opacity:1,
+    x:"0px",
+    transition: { duration: 1, ease: 'easeInOut'}
+  }}
 class App extends Component {
   /*SoundPlay =(src)=>{
     const sound = new Howl({
@@ -29,6 +60,7 @@ class App extends Component {
       )
     })
   }*/
+  
   render(){
   return (
     <div>
@@ -59,25 +91,35 @@ class App extends Component {
 
         </div>
         <div className="home">
-          <div className="jgname">
+          <motion.div className="jgname"
+            variants={jgname}
+            initial="hidden"
+            animate="visible">
             <JgName />
             {/*<div className="soundtrackcontainer">
             <p>Click to listen my kinda music</p>
             <img src={Play} alt="Play-button" id="icon"></img>
             </div>
             {this.renderButtonSound()}*/}
-          </div>
+          </motion.div>
           <div className="jgpic">
             <img src={Dp} alt="joe-gardner-profile"></img>
           </div>
-          <div className="jgsoul">
+          <motion.div className="jgsoul"
+            variants={soul}
+            initial="hidden"
+            animate="visible">
             <img src={Soul} alt="joe-gardners-soul"></img>
-          </div>
-          <div className="smallsection">
+          </motion.div>
+          <motion.div className="smallsection"
+            variants={aboutsection}
+            initial="hidden"
+            animate="visible"
+          >
             <p className="smallhead">Jazz Musician</p>
             <p className="smallcontent">Based in New York City, I’m musician and Middle school band teacher</p>
             <p className="smallquotes">"Life is full of possibilities, you just need to know where to look!"</p>
-          </div>
+          </motion.div>
         </div>
         </div>
       </div>
