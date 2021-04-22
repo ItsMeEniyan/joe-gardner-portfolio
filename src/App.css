@@ -132,3 +132,26 @@ color: #FFFFFF;
   
   color: #FFFFFF;
 }
+.inspiration{
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.inspiration p{
+  width: 440px;
+  font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 154%;
+text-align: center;
+letter-spacing: .025em;
+color: #575757;
+}
+.inspiration p a{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}

@@ -22,7 +22,7 @@ const soul = {
   },
   visible: {
     opacity:1,
-    transition: { duration: 3, delay: 2}
+    transition: { duration: 3, delay: 1}
   }
 }
 const aboutsection = {
@@ -125,9 +125,13 @@ class App extends Component {
       </div>
       
     </div>
-    <div>
-      <h1>My other projects Here</h1>
-      <p>Under Development......</p>
+    <div className="inspiration">
+      <p>Inspired from 
+      <a href="https://dribbble.com/shots/15185698-Portfolio-Joe-Gardner-Conceptual-design"> My Dribble shot </a>
+       based on the character Joe Gardner from the Pixar film Soul</p>
+    </div>
+    <div className="footer">
+      
     </div>
     </div>
   );
