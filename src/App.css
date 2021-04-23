@@ -2,6 +2,35 @@ body{
   margin: 0%;
   font-family: 'Source Sans Pro', sans-serif;
 }
+.entiremobilescreen{
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: radial-gradient(70.94% 141.17% at 77.36% 65.72%, #2411DC 0%, #0B035B 100%);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.entiremobilescreen img{
+  mix-blend-mode: lighten;
+  justify-content: center;
+  width: 400px;
+}
+/*
+.entiremobilescreen div{
+  border: #FFFFFF solid;
+}
+.entiremobilescreen p{
+  border: #FFFFFF solid;
+}
+
+.entiremobilescreen h1{
+  border: #FFFFFF solid;
+}*/
 .page{
   width: 100%;
   height: 100vh;
@@ -154,4 +183,14 @@ color: #575757;
   text-decoration: none;
   font-weight: 600;
   color: black;
+}
+@media screen and (max-width: 720px) {
+  div.entiredesktopscreen {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  div.entiremobilescreen {
+    display: none;
+  }
 }

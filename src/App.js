@@ -64,6 +64,12 @@ class App extends Component {
   render(){
   return (
     <div>
+    <div className="entiremobilescreen">
+      <h1>View on Desktop</h1>
+      <img src={Soul} alt="joe-gardners-soul"></img>
+      <p>mobile view is under development</p>
+    </div>
+    <div className="entiredesktopscreen">
     <div className="page">
       <div className="bgimg">
       <div className="content">
@@ -132,6 +138,7 @@ class App extends Component {
     </div>
     <div className="footer">
       
+    </div>
     </div>
     </div>
   );
