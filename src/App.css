@@ -170,7 +170,7 @@ color: #FFFFFF;
   
 }
 .inspiration p{
-  width: 440px;
+  width: 500px;
   font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -183,6 +183,18 @@ color: #575757;
   text-decoration: none;
   font-weight: 600;
   color: black;
+}
+.footer{
+  height: 25vh;
+  background-image: url("./statics/png/ENIYAN.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items{
+  margin: 23px;
 }
 @media screen and (max-width: 720px) {
   div.entiredesktopscreen {

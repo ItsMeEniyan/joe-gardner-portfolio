@@ -8,6 +8,11 @@ import Soul from "./statics/png/soul.png";
 import  { Component } from 'react';
 
 import { motion } from "framer-motion"
+import Insta from './statics/svg/insta';
+import Linkedin from './statics/svg/linkedin';
+import Github from './statics/svg/github';
+import Behance from './statics/svg/behance';
+import Dribbble from './statics/svg/dribbble';
 //import Pause from "./statics/png/pause.png";
 
 //import Song from ".statics/soundtrack/cristoRedentor.mp3";
@@ -132,12 +137,45 @@ class App extends Component {
       
     </div>
     <div className="inspiration">
-      <p>Inspired from 
-      <a href="https://dribbble.com/shots/15185698-Portfolio-Joe-Gardner-Conceptual-design"> My Dribble shot </a>
-       based on the character Joe Gardner from the Pixar film Soul</p>
+      <p>Developed from 
+      <motion.a href="https://dribbble.com/shots/15185698-Portfolio-Joe-Gardner-Conceptual-design"
+      >
+       my Dribble shot </motion.a>
+       which was inspired by the character Joe Gardner from the Pixar film Soul</p>
     </div>
     <div className="footer">
-      
+      <motion.a href="https://github.com/ItsMeEniyan" className="items"
+      whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}>
+      <Github />
+      </motion.a>
+      <motion.a href="https://www.linkedin.com/in/eniyan-t-b248a0189/" className="items"
+      whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}>
+    
+      <Linkedin/>
+      </motion.a>
+      <motion.a href="https://www.behance.net/eniyan_t" className="items"
+      whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}>
+    
+      <Behance/>
+      </motion.a>
+      <motion.a href="https://dribbble.com/eniyant" className="items"
+      whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
+      <Dribbble/>
+      </motion.a>
+      <motion.a href="https://www.instagram.com/_eniyan_/" className="items"
+      whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}>
+    
+      <Insta/>
+      </motion.a>
+
+
+    
     </div>
     </div>
     </div>
