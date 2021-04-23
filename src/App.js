@@ -138,9 +138,7 @@ class App extends Component {
     </div>
     <div className="inspiration">
       <p>Developed from 
-      <motion.a href="https://dribbble.com/shots/15185698-Portfolio-Joe-Gardner-Conceptual-design"
-      >
-       my Dribble shot </motion.a>
+      <a href="https://dribbble.com/shots/15185698-Portfolio-Joe-Gardner-Conceptual-design"> my Dribble shot </a>
        which was inspired by the character Joe Gardner from the Pixar film Soul</p>
     </div>
     <div className="footer">
